@@ -16,16 +16,4 @@ void State::dispense(){
    performDispense();
 }
 
-void State::performInsertQuarter(){ 
 
-}
-
-void State::performEjectQuarter(){ 
-
-}
-
-void State::performTurnCrank(){ 
-}
-
-void State::performDispense(){ 
-}

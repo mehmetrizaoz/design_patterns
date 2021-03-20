@@ -8,10 +8,10 @@ public:
    void turnCrank();
    void dispense();            
 private:
-   virtual void performInsertQuarter();
-   virtual void performEjectQuarter();
-   virtual void performTurnCrank();
-   virtual void performDispense();         
+   virtual void performInsertQuarter()=0;
+   virtual void performEjectQuarter()=0;
+   virtual void performTurnCrank()=0;
+   virtual void performDispense()=0;         
 };
    
 #endif
