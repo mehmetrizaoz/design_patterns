@@ -24,8 +24,8 @@ void NoQuarterState::performDispense() {
    cout << "You need to pay first" << endl;
 }
 
-string NoQuarterState::print() {
-	return "waiting for quarter";
+void NoQuarterState::performPrint() {
+	cout << "waiting for quarter" << endl;
 }
 
 

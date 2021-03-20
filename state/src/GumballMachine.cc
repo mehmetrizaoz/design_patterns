@@ -72,6 +72,19 @@ State *GumballMachine::getSoldState() {
    return soldState;
 }
 
-
+string GumballMachine::print() {
+	cout << endl << "Mighty Gumball, Inc." << endl;
+	cout << "C++-enabled Standing Gumball Model #2004" << endl;
+	cout << "Inventory: " << count << " gumball";
+	if (count != 1) {
+		cout << "s";
+	}
+	cout << endl;
+   cout << "Machine is ";
+   state->print();
+   cout << endl;
+	
+   return "";
+}
 
 

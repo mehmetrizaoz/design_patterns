@@ -23,8 +23,8 @@ void SoldOutState::performDispense() {
    cout << "No gumball dispensed" << endl;
 }
 
-string SoldOutState::print() {
-	return "sold out";
+void SoldOutState::performPrint() {
+	cout << "sold out" << endl;
 }
 
 

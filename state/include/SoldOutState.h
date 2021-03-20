@@ -15,7 +15,7 @@ public:
    void performEjectQuarter();
    void performTurnCrank();
    void performDispense();
-   string print();
+   void performPrint();
 };
 
 #endif

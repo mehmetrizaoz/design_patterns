@@ -2,6 +2,9 @@
 #define GUMBALL_MACHINE_H
 
 #include "State.h"
+#include <string>
+
+using namespace std;
 
 class GumballMachine
 {
@@ -15,6 +18,7 @@ private:
    State *soldState;      
 
 public:
+   string print();
    GumballMachine(int numberGumballs);
    void insertQuarter();
    void ejectQuarter();

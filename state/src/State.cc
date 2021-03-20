@@ -1,4 +1,7 @@
 #include "State.h"
+#include <iostream>
+
+using namespace std;
 
 void State::insertQuarter(){ 
    performInsertQuarter();
@@ -16,4 +19,7 @@ void State::dispense(){
    performDispense();
 }
 
+void State::print(){    
+   performPrint();
+}
 

@@ -8,26 +8,23 @@ using namespace std;
 class GumballMachine;
 
 int main(){
-		GumballMachine *gumballMachine = new GumballMachine(5);
-      //		System.out.println(gumballMachine);
+	GumballMachine *gumballMachine = new GumballMachine(5);
+    gumballMachine->print();
 
-		gumballMachine->insertQuarter();
-		gumballMachine->turnCrank();
+	gumballMachine->insertQuarter();
+	gumballMachine->turnCrank();
 
-		gumballMachine->insertQuarter();
-		gumballMachine->turnCrank();
+	gumballMachine->print();
 
-		//System.out.println(gumballMachine);
-
-		gumballMachine->insertQuarter();
-		gumballMachine->turnCrank();
+	gumballMachine->insertQuarter();
+	gumballMachine->turnCrank();
 		
-		gumballMachine->insertQuarter();
-		gumballMachine->turnCrank();
+	gumballMachine->insertQuarter();
+	gumballMachine->turnCrank();
 
-//		System.out.println(gumballMachine);
+    gumballMachine->print();
 
-   return 0;
+    return 0;
 }
 
 

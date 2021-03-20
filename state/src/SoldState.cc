@@ -29,8 +29,8 @@ void SoldState::performDispense() {
    }
 }
 
-string SoldState::print() {
-	return "dispensing a gumball";
+void SoldState::performPrint() {
+	cout << "dispensing a gumball" << endl;
 }
 
 
