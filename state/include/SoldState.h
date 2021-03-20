@@ -3,6 +3,9 @@
 
 #include "SoldState.h"
 #include "GumballMachine.h"
+#include <string>
+
+using namespace std;
 
 class SoldState : public State {
 public:
@@ -12,6 +15,7 @@ public:
    void performEjectQuarter();
    void performTurnCrank();
    void performDispense();
+   string print();   
 };
 
 #endif

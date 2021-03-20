@@ -29,6 +29,8 @@ void SoldState::performDispense() {
    }
 }
 
-
+string SoldState::print() {
+	return "dispensing a gumball";
+}
 
 

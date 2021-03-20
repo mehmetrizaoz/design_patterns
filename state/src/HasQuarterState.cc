@@ -26,6 +26,7 @@ void HasQuarterState::performDispense() {
    cout << "No gumball dispensed" << endl;
 }
 
-
-
+string HasQuarterState::print() {
+	return "waiting for turn of crank";
+}
 

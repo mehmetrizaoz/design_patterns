@@ -1,9 +1,11 @@
 #ifndef NO_QUARTER_STATE_H
 #define NO_QUARTER_STATE_H
 
-#include "State.h"
 #include "NoQuarterState.h"
 #include "GumballMachine.h"
+#include <string>
+
+using namespace std;
 
 class NoQuarterState : public State {
 public:
@@ -13,6 +15,7 @@ public:
    void performEjectQuarter();
    void performTurnCrank();
    void performDispense();
+   string print();   
 };
 
 #endif
