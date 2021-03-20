@@ -1,17 +1,21 @@
+vpath %.cc src
+vpath %.h include
 CC := g++
-CPPFLAGS := -std=c++14
-objects := main.o
-libs :=
+
+CPPFLAGS = -I include
+objects := State.o SoldState.o SoldOutState.o NoQuarterState.o HasQuarterState.o GumballMachine.o main.o
+
+all: exec
 
 exec: $(objects)
-	$(CC) $^ $(libs) -o $@
+	$(CC) $^ -o $@
 
 %.o: %.c
 	$(CC) $(CPPFLAGS) -c $<
-	
+
 .PHONY: clean help
 clean:
-	rm -f exec $(objects)
+	rm exec $(objects)
 
 help:
 	@echo "make"
