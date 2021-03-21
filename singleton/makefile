@@ -2,8 +2,8 @@ vpath %.cc src
 vpath %.h include
 CC := g++
 
-CPPFLAGS = -I include -fpermissive
-objects := singleton.o main.o
+CPPFLAGS = -I include
+objects := Singleton.o main.o
 
 all: exec
 
