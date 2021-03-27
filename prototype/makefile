@@ -3,7 +3,7 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include
-objects = main.o
+objects = Player.o GoalKeeper.o Defender.o Midfielder.o Attacker.o playerManager.o main.o
 
 all: exec
 
