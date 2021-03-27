@@ -1,53 +1,58 @@
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
-const int N = 3;
+const int N = 4;
 
-class Document {
+class Player {
 public:
-   virtual Document* clone() const = 0;
-   virtual void store() const = 0;
+   virtual Player* clone() const = 0;
+   virtual void attributes() const = 0;
 };
 
-class xmlDoc : public Document {
+class GoalKeeper : public Player {
 public:
-   Document* clone() const { return new xmlDoc; }
-   void store() const { cout << "xmlDoc\n"; }
+   Player* clone() const { return new GoalKeeper; }
+   void attributes() const { cout << "GoalKeeper\n"; }
 };
 
-class plainDoc : public Document{
+class Defender : public Player {
 public:
-   Document* clone() const { return new plainDoc; }
-   void store() const { cout << "plainDoc\n"; }
+   Player* clone() const { return new Defender; }
+   void attributes() const { cout << "Defender\n"; }
 };
 
-class spreadsheetDoc : public Document{
+class Midfielder : public Player{
 public:
-   Document* clone() const { return new spreadsheetDoc; }
-   void store() const { cout << "spreadsheetDoc\n"; }
+   Player* clone() const { return new Midfielder; }
+   void attributes() const { cout << "Midfielder\n"; }
 };
 
-class DocumentManager {
+class Attacker : public Player{
 public:
-   static Document* makeDocument( int choice ){
-      return mDocTypes[choice]->clone();
+   Player* clone() const { return new Attacker; }
+   void attributes() const { cout << "Attacker\n"; }
+};
+
+class playerManager {
+public:
+   static Player* makePlayer( int choice ){
+      return playerType[choice]->clone();
    }
 private:
-   static Document* mDocTypes[N];
+   static Player* playerType[N];
 };
 
-Document* DocumentManager::mDocTypes[] = { new xmlDoc, new plainDoc, new spreadsheetDoc };
+Player* playerManager::playerType[] = { new GoalKeeper, new Defender, new Midfielder, new Attacker };
 
 int main() {
    int choice;
-   cout << "xml(0), plain(1), spreadsheet(2): \n";
+   cout << "GoalKeeper(0), Defender(1), Midfielder(2), Attacker(3)" << endl;
 
    cin >> choice;
    if(choice < N){
-      Document *docs = DocumentManager::makeDocument( choice );
-      docs->store();
+      Player *player = playerManager::makePlayer( choice );
+      player->attributes();
    }
 
    return 0;
