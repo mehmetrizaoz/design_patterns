@@ -9,8 +9,7 @@ using namespace std;
 int main() {      
    Player *p = PlayerFactory::getPlayer("Counter");   
    p->assignWeapon("Pistole");
-   p->mission();
-   
+   p->mission();   
    cout << PlayerFactory::hm.size() << endl << endl;
 
    Player *p2 = PlayerFactory::getPlayer("Terrorist");   
@@ -21,6 +20,11 @@ int main() {
    Player *p3 = PlayerFactory::getPlayer("Terrorist");   
    p3->assignWeapon("Rifle");
    p3->mission(); 
+   cout << PlayerFactory::hm.size() << endl << endl;
+
+   Player *p4 = PlayerFactory::getPlayer("Counter");   
+   p4->assignWeapon("Knife");
+   p4->mission();   
    cout << PlayerFactory::hm.size() << endl << endl;
 
    return 0;

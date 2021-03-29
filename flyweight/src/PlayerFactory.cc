@@ -12,19 +12,16 @@ vector<Player*> PlayerFactory::hm;
 
 Player *PlayerFactory::getPlayer(string type){
    for(auto it = PlayerFactory::hm.begin(); it < PlayerFactory::hm.end(); ++it){
-      //cout << (*it)->type << endl;
       if((*it)->type == type){
           return PlayerFactory::hm[it - PlayerFactory::hm.begin()];
       }    
    }
-
+   //if not added before add it
    if(type == "Terrorist"){
-       PlayerFactory::hm.push_back(new Terrorist());
-       cout << "111" << endl;
+       PlayerFactory::hm.push_back(new Terrorist());       
    }
    else if(type == "Counter"){
-       PlayerFactory::hm.push_back(new CounterTerrorist());
-       cout << "222" << endl;
+       PlayerFactory::hm.push_back(new CounterTerrorist());       
    }
 
    return PlayerFactory::hm.back();  
