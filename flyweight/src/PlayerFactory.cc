@@ -10,23 +10,7 @@ using namespace std;
 
 vector<Player*> PlayerFactory::hm;
 
-PlayerFactory::PlayerFactory(){
-   /*PlayerFactory::hm.push_back(new Terrorist());
-   PlayerFactory::hm.push_back(new CounterTerrorist());
-
-   for(auto it = PlayerFactory::hm.begin(); it < PlayerFactory::hm.end(); ++it){
-      cout << (*it)->type << endl;
-   }   */
-}
-
 Player *PlayerFactory::getPlayer(string type){
-   if(type == "Terrorist"){
-       PlayerFactory::hm.push_back(new Terrorist());
-   }
-   else if(type == "Counter"){
-       PlayerFactory::hm.push_back(new CounterTerrorist());
-   }
-   
    for(auto it = PlayerFactory::hm.begin(); it < PlayerFactory::hm.end(); ++it){
       //cout << (*it)->type << endl;
       if((*it)->type == type){
@@ -34,6 +18,15 @@ Player *PlayerFactory::getPlayer(string type){
       }    
    }
 
-   return nullptr;   
+   if(type == "Terrorist"){
+       PlayerFactory::hm.push_back(new Terrorist());
+       cout << "111" << endl;
+   }
+   else if(type == "Counter"){
+       PlayerFactory::hm.push_back(new CounterTerrorist());
+       cout << "222" << endl;
+   }
+
+   return PlayerFactory::hm.back();  
 }
 

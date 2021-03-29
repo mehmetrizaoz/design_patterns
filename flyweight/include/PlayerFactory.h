@@ -8,7 +8,6 @@
 
 class PlayerFactory{
 public:
-    PlayerFactory();
     static Player *getPlayer(string type);
     static vector<Player*> hm;
 };

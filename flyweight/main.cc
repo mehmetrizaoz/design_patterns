@@ -10,12 +10,18 @@ int main() {
    Player *p = PlayerFactory::getPlayer("Counter");   
    p->assignWeapon("Pistole");
    p->mission();
-
-   cout << endl;
+   
+   cout << PlayerFactory::hm.size() << endl << endl;
 
    Player *p2 = PlayerFactory::getPlayer("Terrorist");   
    p2->assignWeapon("Sniper");
    p2->mission();
+   cout << PlayerFactory::hm.size() << endl << endl;
+
+   Player *p3 = PlayerFactory::getPlayer("Terrorist");   
+   p3->assignWeapon("Rifle");
+   p3->mission(); 
+   cout << PlayerFactory::hm.size() << endl << endl;
 
    return 0;
 }

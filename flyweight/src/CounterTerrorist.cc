@@ -12,6 +12,6 @@ void CounterTerrorist::performMission()    {
     cout << "Counter Terrorist with weapon " << weapon << " | Task is " + TASK << endl;
 }
 
-CounterTerrorist::CounterTerrorist(){
+CounterTerrorist::CounterTerrorist(){    
     type = "Counter";
 }
