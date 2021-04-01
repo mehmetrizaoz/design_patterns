@@ -20,22 +20,22 @@ class Screen;
 class TheaterLights;
 class PopcornPopper;
 
-HomeTheaterFacade::HomeTheaterFacade(Amplifier *_amp, 
-                Tuner *_tuner, 
-                DvdPlayer *_dvd, 
-                CdPlayer *_cd, 
-                Projector *_projector, 
-                Screen *_screen,
-                TheaterLights *_lights,
-                PopcornPopper *_popper) {
-    amp = _amp;
-    tuner = _tuner;
-    dvd = _dvd;
-    cd = _cd;
-    projector = _projector;
-    screen = _screen;
-    lights = _lights;
-    popper = _popper;
+HomeTheaterFacade::HomeTheaterFacade(Amplifier *amp, 
+                Tuner *tuner, 
+                DvdPlayer *dvd, 
+                CdPlayer *cd, 
+                Projector *projector, 
+                Screen *screen,
+                TheaterLights *lights,
+                PopcornPopper *popper) {
+    this->amp = amp;
+    this->tuner = tuner;
+    this->dvd = dvd;
+    this->cd = cd;
+    this->projector = projector;
+    this->screen = screen;
+    this->lights = lights;
+    this->popper = popper;
 }
 
 void HomeTheaterFacade::watchMovie(string movie) {
@@ -91,6 +91,7 @@ void HomeTheaterFacade::listenToRadio(double frequency) {
     tuner->setFrequency(frequency);
     amp->on();
     amp->setVolume(5);
+    
     amp->setTuner(*tuner);
 }
 

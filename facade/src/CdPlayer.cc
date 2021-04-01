@@ -6,9 +6,9 @@
 using namespace std;
 
 
-CdPlayer::CdPlayer(string _description, Amplifier *_amplifier) {
-    description = _description;
-    amplifier = _amplifier;
+CdPlayer::CdPlayer(string description, Amplifier *amplifier) {
+    this->description = description;
+    this->amplifier = amplifier;
 }
 
 void CdPlayer::on() {
@@ -24,8 +24,8 @@ void CdPlayer::eject() {
     cout << description << " eject" << endl;
 }
 
-void CdPlayer::play(string _title) {
-    title = _title;
+void CdPlayer::play(string title) {
+    this->title = title;
     currentTrack = 0;
     cout << description << " playing \"" << title << "\"" << endl;
 }

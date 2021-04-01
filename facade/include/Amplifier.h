@@ -18,15 +18,15 @@ public:
    Tuner *tuner;
    DvdPlayer *dvd;
    CdPlayer *cd;
-   Amplifier(string _description);
+   Amplifier(string description);
    void on();
    void off();
    void setStereoSound();
    void setSurroundSound();
    void setVolume(int level);
-   void setTuner(Tuner _tuner);
-   void setDvd(DvdPlayer _dvd);
-   void setCd(CdPlayer _cd);
+   void setTuner(Tuner tuner);
+   void setDvd(DvdPlayer dvd);
+   void setCd(CdPlayer cd);
    string toString();
 };
 

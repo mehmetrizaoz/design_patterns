@@ -5,7 +5,8 @@
 using namespace std;
 
 Tuner::Tuner(string description, Amplifier *amplifier) {
-    description = description;
+    this->description = description;
+    this->amplifier = amplifier;
 }
 
 void Tuner::on() {
@@ -18,7 +19,7 @@ void Tuner::off() {
 
 void Tuner::setFrequency(double frequency) {
     cout << description << " setting frequency to " << frequency << endl;
-    frequency = frequency;
+    this->frequency = frequency;
 }
 
 void Tuner::setAm() {

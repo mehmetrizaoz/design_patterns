@@ -28,7 +28,15 @@ int main(){
 				projector, screen, lights, popper);
 
    homeTheater->watchMovie("Raiders of the Lost Ark");
-   //homeTheater->endMovie();
+   homeTheater->endMovie();
+
+   cout << endl;
+   homeTheater->listenToCd("Barış Manço");
+   homeTheater->endCd();
+
+   cout << endl;
+   homeTheater->listenToRadio(98.40);
+   homeTheater->endRadio();
 
    return 0;
 }

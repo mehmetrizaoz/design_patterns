@@ -5,7 +5,7 @@
 using namespace std;
 
 TheaterLights::TheaterLights(string description) {
-    description = description;
+    this->description = description;
 }
 
 void TheaterLights::on(){

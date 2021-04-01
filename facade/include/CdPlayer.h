@@ -14,11 +14,11 @@ public:
    int currentTrack;
    Amplifier *amplifier;
    string title;
-   CdPlayer(string _description, Amplifier *_amplifier);
+   CdPlayer(string description, Amplifier *amplifier);
    void on();
    void off();
    void eject();
-   void play(string _title);
+   void play(string title);
    void play(int track);
    void stop();
    void pause();

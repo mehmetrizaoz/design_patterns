@@ -5,8 +5,8 @@
 
 using namespace std;
 
-Amplifier::Amplifier(string _description) {
-    description = _description;
+Amplifier::Amplifier(string description) {
+    this->description = description;
 }
 
 void Amplifier::on() {
@@ -29,19 +29,19 @@ void Amplifier::setVolume(int level) {
     cout << description << " setting volume to " << level << endl;
 }
 
-void Amplifier::setTuner(Tuner _tuner) {
-    cout << description << " setting tuner to " << dvd->toString() << endl;
-    *tuner = _tuner;
+void Amplifier::setTuner(Tuner tuner) {
+    cout << description << " setting tuner to " << tuner.toString() << endl;
+    this->tuner = &tuner;
 }
 
-void Amplifier::setDvd(DvdPlayer _dvd) {
-    cout << description << " setting DVD player to " << _dvd.toString() << endl;
-    *dvd = _dvd;
+void Amplifier::setDvd(DvdPlayer dvd) {
+    cout << description << " setting DVD player to " << dvd.toString() << endl;
+    this->dvd = &dvd;
 }
 
-void Amplifier::setCd(CdPlayer _cd) {
-    cout << description << " setting CD player to " << _cd.toString() << endl;
-    *cd = _cd;
+void Amplifier::setCd(CdPlayer cd) {
+    cout << description << " setting CD player to " << cd.toString() << endl;
+    this->cd = &cd;
 }
 
 string Amplifier::toString() {

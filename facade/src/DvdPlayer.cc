@@ -6,8 +6,8 @@
 using namespace std;
 
 DvdPlayer::DvdPlayer(string description, Amplifier *amplifier) {
-    description = description;
-    amplifier = amplifier;
+    this->description = description;
+    this->amplifier = amplifier;
 }
 
 void DvdPlayer::on() {
@@ -24,7 +24,7 @@ void DvdPlayer::eject() {
 }
 
 void DvdPlayer::play(string movie) {
-    movie = movie;
+    this->movie = movie;
     currentTrack = 0;
     cout << description << " playing \"" << movie << "\"" << endl;
 }

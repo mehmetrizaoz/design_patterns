@@ -5,7 +5,7 @@
 using namespace std;
 
 Screen::Screen(string description) {
-   description = description;
+   this->description = description;
 }
 
 void Screen::up() {

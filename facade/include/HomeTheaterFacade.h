@@ -24,8 +24,8 @@ public:
 	Screen *screen;
 	PopcornPopper *popper;
  
-	HomeTheaterFacade(Amplifier *_amp, Tuner *_tuner, DvdPlayer *_dvd, CdPlayer *_cd, 
-       Projector *_projector, Screen *_screen, TheaterLights *_lights, PopcornPopper *_popper);
+	HomeTheaterFacade(Amplifier *amp, Tuner *tuner, DvdPlayer *dvd, CdPlayer *cd, 
+       Projector *projector, Screen *screen, TheaterLights *lights, PopcornPopper *popper);
  
 	void watchMovie(string movie);
 	void endMovie();

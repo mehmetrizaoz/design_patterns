@@ -5,7 +5,7 @@
 using namespace std;
 
 PopcornPopper::PopcornPopper(string description) {
-    description = description;
+    this->description = description;
 }
 
 void PopcornPopper::on() {

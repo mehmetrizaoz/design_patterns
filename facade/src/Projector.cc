@@ -6,8 +6,8 @@
 using namespace std;
 
 Projector::Projector(string description, DvdPlayer *dvdPlayer) {
-    description = description;
-    dvdPlayer = dvdPlayer;
+    this->description = description;
+    this->dvdPlayer = dvdPlayer;
 }
 
 void Projector::on() {
