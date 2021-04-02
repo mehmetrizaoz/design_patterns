@@ -5,8 +5,8 @@
 
 class GoalKeeper : public Player {
 public:   
-   Player* performClone() const;
-   void performAttributes() const;   
+   Player* clone() const;
+   void attributes() const;   
 };
 
 #endif

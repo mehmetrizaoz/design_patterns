@@ -4,10 +4,10 @@
 
 using namespace std;
 
-Player* GoalKeeper::performClone() const { 
+Player* GoalKeeper::clone() const { 
     return new GoalKeeper;
 }
 
-void GoalKeeper::performAttributes() const { 
+void GoalKeeper::attributes() const { 
     cout << "GoalKeeper\n"; 
 }

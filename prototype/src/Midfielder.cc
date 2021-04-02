@@ -4,10 +4,10 @@
 
 using namespace std;
 
-Player* Midfielder::performClone() const { 
+Player* Midfielder::clone() const { 
     return new Midfielder;
 }
 
-void Midfielder::performAttributes() const { 
+void Midfielder::attributes() const { 
     cout << "Midfielder\n"; 
 }

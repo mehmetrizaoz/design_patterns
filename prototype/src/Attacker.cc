@@ -4,10 +4,10 @@
 
 using namespace std;
 
-Player* Attacker::performClone() const { 
+Player* Attacker::clone() const { 
     return new Attacker;
 }
 
-void Attacker::performAttributes() const { 
+void Attacker::attributes() const { 
     cout << "Attacker\n"; 
 }

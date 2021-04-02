@@ -3,11 +3,12 @@
 
 class Player {
 public:
-   Player* clone() const;
-   void attributes() const;
-private:
-   virtual Player* performClone() const = 0;
-   virtual void performAttributes() const = 0;
+   Player();
+//   Player* clone() const;
+//   void attributes() const;
+//private:
+   virtual Player* clone() const = 0;
+   virtual void attributes() const = 0;
 };
 
 #endif
