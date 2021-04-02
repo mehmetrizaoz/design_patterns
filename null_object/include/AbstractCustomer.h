@@ -7,12 +7,10 @@ using namespace std;
 
 class AbstractCustomer {
 public:
-   bool isNil();
-   string getName();
+   AbstractCustomer();
    string name;
-private:
-   virtual bool performIsNil() = 0;
-   virtual string performGetName() = 0;   
+   virtual bool isNil() = 0;
+   virtual string getName() = 0;   
 };
 
 

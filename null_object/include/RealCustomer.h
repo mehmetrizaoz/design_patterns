@@ -9,8 +9,8 @@ using namespace std;
 class RealCustomer : public AbstractCustomer {
 public:
    RealCustomer(string name);
-   string performGetName();
-   bool performIsNil();   
+   string getName();
+   bool isNil();   
 };
 
 #endif

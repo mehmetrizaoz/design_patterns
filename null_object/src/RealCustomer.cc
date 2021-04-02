@@ -5,11 +5,11 @@ RealCustomer::RealCustomer(string n) {
    name = n;		
 }
    
-string RealCustomer::performGetName() {
+string RealCustomer::getName() {
    return name;
 }
    
-bool RealCustomer::performIsNil() {
+bool RealCustomer::isNil() {
    return false;
 }
 

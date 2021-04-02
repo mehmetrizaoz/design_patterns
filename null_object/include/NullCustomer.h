@@ -8,8 +8,8 @@ using namespace std;
 
 class NullCustomer : public AbstractCustomer {
 public:
-   string performGetName();
-   bool performIsNil();   
+   string getName();
+   bool isNil();   
 };
 
 #endif

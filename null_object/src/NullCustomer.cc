@@ -2,11 +2,11 @@
 #include "AbstractCustomer.h"
 
   
-string NullCustomer::performGetName() {
+string NullCustomer::getName() {
    return "Not Available in Customer Database";   
 }
    
-bool NullCustomer::performIsNil() {
+bool NullCustomer::isNil() {
    return true;
 }
 
