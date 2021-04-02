@@ -11,7 +11,7 @@ MediaAdapter::MediaAdapter(string audioType){
    }
 }
 
-void MediaAdapter::performPlay(string audioType, string fileName){
+void MediaAdapter::play(string audioType, string fileName){
    if(audioType == "vlc"){
        advancedMusicPlayer->playVlc(fileName);
    }

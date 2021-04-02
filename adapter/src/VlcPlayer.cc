@@ -3,11 +3,12 @@
 
 using namespace std;
 
-void VlcPlayer::performPlayVlc(string fileName){
+
+void VlcPlayer::playVlc(string fileName){
    cout << "Playing vlc file. Name: " << fileName << endl;
 }
 
-void VlcPlayer::performPlayMp4(string fileName){
+void VlcPlayer::playMp4(string fileName){
    //do nothing
 }
    

@@ -2,12 +2,7 @@
 
 using namespace std;
 
-void AdvancedMediaPlayer::playVlc(string fileName){
-   performPlayVlc(fileName);
-}
+AdvancedMediaPlayer::AdvancedMediaPlayer(){}
 
-void AdvancedMediaPlayer::playMp4(string fileName){
-   performPlayMp4(fileName);
-}
 
    

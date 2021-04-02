@@ -5,8 +5,8 @@
 
 class VlcPlayer : public AdvancedMediaPlayer{
 public:
-   void performPlayVlc(string fileName);
-   void performPlayMp4(string fileName);
+   void playVlc(string fileName);
+   void playMp4(string fileName);
 };
 
 

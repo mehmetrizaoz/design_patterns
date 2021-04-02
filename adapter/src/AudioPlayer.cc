@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void AudioPlayer::performPlay(string audioType, string fileName){
+void AudioPlayer::play(string audioType, string fileName){
    if(audioType == "mp3"){
        cout << "Playing mp3 file. Name: " << fileName << endl;
    }

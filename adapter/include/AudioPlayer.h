@@ -6,9 +6,10 @@
 #include <string>
 
 class AudioPlayer : public MediaPlayer {
-public:
+private:
    MediaAdapter *mediaAdapter;
-   void performPlay(string audioType, string fileName);
+public:   
+   void play(string audioType, string fileName);
 };
 
 #endif

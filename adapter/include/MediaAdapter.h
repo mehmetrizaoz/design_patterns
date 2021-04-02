@@ -5,10 +5,11 @@
 #include "MediaPlayer.h"
 
 class MediaAdapter : public MediaPlayer {
-public:
+private:
    AdvancedMediaPlayer *advancedMusicPlayer;
+public:   
    MediaAdapter(string audioType);
-   void performPlay(string audioType, string fileName);
+   void play(string audioType, string fileName);
 };
 
 #endif

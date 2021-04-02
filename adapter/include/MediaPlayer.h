@@ -7,9 +7,8 @@ using namespace std;
 
 class MediaPlayer {
 public:
-   void play(string audioType, string fileName);
-private:
-   virtual void performPlay(string audioType, string fileName)=0;
+   MediaPlayer();
+   virtual void play(string audioType, string fileName)=0;
 };
 
 #endif
