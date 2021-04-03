@@ -16,6 +16,7 @@ Player *PlayerFactory::getPlayer(string type){
           return PlayerFactory::hm[it - PlayerFactory::hm.begin()];
       }    
    }
+
    //if not added before add it
    if(type == "Terrorist"){
        PlayerFactory::hm.push_back(new Terrorist());       

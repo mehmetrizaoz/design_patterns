@@ -4,11 +4,11 @@
 
 using namespace std;
 
-void Terrorist::performAssignWeapon(string w){    
+void Terrorist::assignWeapon(string w){    
     weapon = w;
 }
 
-void Terrorist::performMission()    {
+void Terrorist::mission()    {
     cout << "Terrorist with weapon " << weapon << " | Task is " + TASK << endl;
 }
 

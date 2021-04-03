@@ -3,10 +3,5 @@
 
 using namespace std;
 
-void Player::assignWeapon(string weapon){
-   performAssignWeapon(weapon);
-}
+Player::Player(){}
 
-void Player::mission(){
-   performMission();
-}

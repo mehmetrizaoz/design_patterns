@@ -10,8 +10,8 @@ private:
     string weapon;
 public:
     Terrorist();
-    void performAssignWeapon(string weapon);
-    void performMission();
+    void assignWeapon(string weapon);
+    void mission();
 };
 
 #endif
