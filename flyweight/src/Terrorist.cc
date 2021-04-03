@@ -11,3 +11,7 @@ void Terrorist::assignWeapon(string w){
 void Terrorist::mission()    {
     cout << "Terrorist with weapon " << weapon << " | Task is " + TASK << endl;
 }
+
+Terrorist::Terrorist(){
+    type = "Terrorist";
+}
