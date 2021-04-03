@@ -3,9 +3,9 @@
 
 class Observer {
 public:
-   void update();
+   void update(float temp, float humidity, float pressure);
 private:
-   virtual void performUpdate()=0;
+   virtual void performUpdate(float temp, float humidity, float pressure)=0;
 };
 
 #endif

@@ -3,17 +3,18 @@
 
 #include "Observer.h"
 #include "DisplayElement.h"
+#include "Subject.h"
 
 class CurrentConditionsDisplay : public Observer, DisplayElement {
 public:
-   CurrentConditionsDisplay(/*Subject weatherData*/);
+   CurrentConditionsDisplay(Subject *weatherData);
    void performUpdate(float temperature, float humidity, float pressure);
    void performDisplay();
 
 private:
    float temperature;
    float humidity;
-   //Subject weatherData;
+   Subject *weatherData;
 };
 
 #endif

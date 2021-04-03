@@ -3,7 +3,7 @@
 
 #include "Observer.h"
 #include "DisplayElement.h"
-
+#include "WeatherData.h"
 
 class StatisticsDisplay : public Observer, DisplayElement {
 private:
@@ -11,9 +11,9 @@ private:
    float minTemp = 200;
    float tempSum= 0.0f;
    int numReadings;
-   //WeatherData weatherData;
+   WeatherData *weatherData;
 public:
-   //StatisticsDisplay(WeatherData weatherData);
+   StatisticsDisplay(WeatherData *weatherData);
    void performUpdate(float temp, float humidity, float pressure);
    void performDisplay();
 };

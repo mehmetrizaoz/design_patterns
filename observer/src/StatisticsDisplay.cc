@@ -2,11 +2,11 @@
 #include <iostream>
 
 using namespace std;
-/*
-StatisticsDisplay::StatisticsDisplay(WeatherData weatherData) {
+
+StatisticsDisplay::StatisticsDisplay(WeatherData *weatherData) {
    this->weatherData = weatherData;
-   weatherData.registerObserver(this);
-}*/
+   weatherData->registerObserver(this);
+}
 
 void StatisticsDisplay::performUpdate(float temp, float humidity, float pressure) {
    tempSum += temp;
@@ -20,7 +20,7 @@ void StatisticsDisplay::performUpdate(float temp, float humidity, float pressure
 	minTemp = temp;
    }
 
-   display();
+   performDisplay();
 }
 
 void StatisticsDisplay::performDisplay() {

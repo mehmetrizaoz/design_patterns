@@ -2,20 +2,20 @@
 #include "Observer.h"
 #include "DisplayElement.h"
 #include <iostream>
+#include "WeatherData.h"
 
 using namespace std;
 
-/*
-ForecastDisplay::ForecastDisplay(WeatherData weatherData) {
-    this.weatherData = weatherData;
-    weatherData.registerObserver(this);
-}*/
+ForecastDisplay::ForecastDisplay(WeatherData *weatherData) {
+    this->weatherData = weatherData;
+    weatherData->registerObserver(this);
+}
 
 void ForecastDisplay::performUpdate(float temp, float humidity, float pressure) {
             lastPressure = currentPressure;
     currentPressure = pressure;
 
-    display();
+    performDisplay();
 }
 
 void ForecastDisplay::performDisplay() {

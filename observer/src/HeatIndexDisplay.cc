@@ -3,11 +3,11 @@
 
 using namespace std;
 
-/*
-HeatIndexDisplay::HeatIndexDisplay(WeatherData weatherData) {
+
+HeatIndexDisplay::HeatIndexDisplay(WeatherData *weatherData) {
    this->weatherData = weatherData;
-   weatherData.registerObserver(this);
-}*/
+   weatherData->registerObserver(this);
+}
 
 void HeatIndexDisplay::update(float t, float rh, float pressure) {
    heatIndex = computeHeatIndex(t, rh);
