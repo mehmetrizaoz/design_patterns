@@ -2,10 +2,11 @@
 #define DISPLAY_ELEMENT_H
 
 class DisplayElement {
-public:
+public:/*
    void display();
-private:
-   virtual void performDisplay()=0;
+private:*/
+   DisplayElement();
+   virtual void display()=0;
 };
 
 #endif

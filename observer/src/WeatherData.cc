@@ -10,11 +10,11 @@ class Observer;
 
 WeatherData::WeatherData() {}
 
-void WeatherData::performRegisterObserver(Observer *o) {  
+void WeatherData::registerObserver(Observer *o) {  
     observers.push_back(o);    
 }
 
-void WeatherData::performRemoveObserver(Observer *o) {
+void WeatherData::removeObserver(Observer *o) {
     auto it = find(observers.begin(), observers.end(), o);
     
     if (it != observers.end()) {
@@ -22,14 +22,14 @@ void WeatherData::performRemoveObserver(Observer *o) {
     }
 }
 
-void WeatherData::performNotifyObservers() {
+void WeatherData::notifyObservers() {
     for (int i = 0; i < observers.size(); i++) {
         observers.at(i)->update(temperature, humidity, pressure);
     }
 }
 
 void WeatherData::measurementsChanged() {
-    performNotifyObservers();
+    notifyObservers();
 }
 
 void WeatherData::setMeasurements(float temperature, float humidity, float pressure) {

@@ -12,8 +12,8 @@ private:
    WeatherData *weatherData;
 public:
    ForecastDisplay(WeatherData *weatherData) ;
-   void performUpdate(float temp, float humidity, float pressure);
-   void performDisplay();
+   void update(float temp, float humidity, float pressure);
+   void display();
 };
 
 #endif

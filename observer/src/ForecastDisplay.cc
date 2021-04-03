@@ -11,14 +11,14 @@ ForecastDisplay::ForecastDisplay(WeatherData *weatherData) {
     weatherData->registerObserver(this);
 }
 
-void ForecastDisplay::performUpdate(float temp, float humidity, float pressure) {
+void ForecastDisplay::update(float temp, float humidity, float pressure) {
             lastPressure = currentPressure;
     currentPressure = pressure;
 
-    performDisplay();
+    display();
 }
 
-void ForecastDisplay::performDisplay() {
+void ForecastDisplay::display() {
     cout << "Forecast: ";
     if (currentPressure > lastPressure) {
         cout << "Improving weather on the way!" << endl;

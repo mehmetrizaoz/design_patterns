@@ -16,9 +16,9 @@ private:
 public:	
     vector<Observer*> observers;
 	WeatherData();
-    void performRegisterObserver(Observer *o);
-	void performRemoveObserver(Observer *o);	
-	void performNotifyObservers();	
+    void registerObserver(Observer *o);
+	void removeObserver(Observer *o);	
+	void notifyObservers();	
 	void measurementsChanged();
 	void setMeasurements(float temperature, float humidity, float pressure);	
 	float getTemperature();

@@ -8,7 +8,7 @@ StatisticsDisplay::StatisticsDisplay(WeatherData *weatherData) {
    weatherData->registerObserver(this);
 }
 
-void StatisticsDisplay::performUpdate(float temp, float humidity, float pressure) {
+void StatisticsDisplay::update(float temp, float humidity, float pressure) {
    tempSum += temp;
    numReadings++;
 
@@ -20,10 +20,10 @@ void StatisticsDisplay::performUpdate(float temp, float humidity, float pressure
 	minTemp = temp;
    }
 
-   performDisplay();
+   display();
 }
 
-void StatisticsDisplay::performDisplay() {
+void StatisticsDisplay::display() {
    cout << "Avg/Max/Min temperature = " << (tempSum / numReadings)
 	<< "/" << maxTemp << "/" << minTemp << endl;
 }

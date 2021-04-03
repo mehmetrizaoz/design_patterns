@@ -8,8 +8,8 @@
 class CurrentConditionsDisplay : public Observer, DisplayElement {
 public:
    CurrentConditionsDisplay(Subject *weatherData);
-   void performUpdate(float temperature, float humidity, float pressure);
-   void performDisplay();
+   void update(float temperature, float humidity, float pressure);
+   void display();
 
 private:
    float temperature;

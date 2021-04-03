@@ -9,13 +9,13 @@ CurrentConditionsDisplay::CurrentConditionsDisplay(Subject *weatherData) {
 	weatherData->registerObserver(this);
 }
 
-void CurrentConditionsDisplay::performUpdate(float temperature, float humidity, float pressure) {
+void CurrentConditionsDisplay::update(float temperature, float humidity, float pressure) {
 	this->temperature = temperature;
 	this->humidity = humidity;
-	performDisplay();
+	display();
 }
 
-void CurrentConditionsDisplay::performDisplay() {
+void CurrentConditionsDisplay::display() {
 	cout << "Current conditions: " << temperature 
 		<< "F degrees and " << humidity << "% humidity" << endl;
 }
