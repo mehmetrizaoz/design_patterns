@@ -9,10 +9,10 @@ using namespace std;
 
 class Waitress {
 public:
-   //PancakeHouseMenu pancakeHouseMenu;
+   PancakeHouseMenu pancakeHouseMenu;
    DinerMenu dinerMenu;
 
-   Waitress(/*PancakeHouseMenu pancakeHouseMenu, */DinerMenu dinerMenu);
+   Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu);
    void printMenu();   
    void printVegetarianMenu();
    bool isItemVegetarian(string name);

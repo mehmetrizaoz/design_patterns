@@ -1,4 +1,5 @@
 #include "DinerMenu.h"
+#include "PancakeHouseMenu.h"
 #include "Iterator.h"
 #include "MenuItem.h"
 #include "Waitress.h"
@@ -7,19 +8,19 @@
 
 using namespace std;
 
-Waitress::Waitress(/*PancakeHouseMenu pancakeHouseMenu, */DinerMenu dinerMenu) {
-    //this.pancakeHouseMenu = pancakeHouseMenu;
+Waitress::Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+    this->pancakeHouseMenu = pancakeHouseMenu;
     this->dinerMenu = dinerMenu;
 }
 
 void Waitress::printMenu() {
-    //Iterator pancakeIterator = pancakeHouseMenu.createIterator();
+    auto pancakeIterator = pancakeHouseMenu.createIterator();
     auto dinerIterator = dinerMenu.createIterator();
 
-    //System.out.println("MENU\n----\nBREAKFAST");
-    //printMenu(pancakeIterator);
+    cout << "MENU\n----\nBREAKFAST" << endl;
+    printMenu(pancakeIterator);
     
-    //System.out.println("\nLUNCH");
+    cout << "\nLUNCH" << endl;
     printMenu(dinerIterator);
 }
 
@@ -33,15 +34,16 @@ void Waitress::printMenu(Iterator *iterator) {
 }
 
 void Waitress::printVegetarianMenu() {
-    //printVegetarianMenu(pancakeHouseMenu.createIterator());
+    printVegetarianMenu(pancakeHouseMenu.createIterator());
     printVegetarianMenu(dinerMenu.createIterator());
 }
 
 bool Waitress::isItemVegetarian(string name) {
-    /*Iterator breakfastIterator = pancakeHouseMenu.createIterator();
+    Iterator *breakfastIterator = pancakeHouseMenu.createIterator();
     if (isVegetarian(name, breakfastIterator)) {
         return true;
-    }*/
+    }
+
     Iterator *dinnerIterator = dinerMenu.createIterator();
     if (isVegetarian(name, dinnerIterator)) {
         return true;

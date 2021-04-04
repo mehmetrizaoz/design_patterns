@@ -18,12 +18,12 @@ DinerMenu::DinerMenu() {
 void DinerMenu::addItem(string name, string description, bool vegetarian, double price){
     MenuItem *m_item = new MenuItem(name, description, vegetarian, price);
     menuItems.push_back(*m_item);
-    numberOfItems++;
 }
 
 vector<MenuItem> DinerMenu::getMenuItems() {
     return menuItems;
 }
+
 Iterator *DinerMenu::createIterator() {
     return new DinerMenuIterator(menuItems);
 }
