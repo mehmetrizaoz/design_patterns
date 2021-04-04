@@ -13,7 +13,7 @@ public:
    vector<MenuItem> menuItems;
    PancakeHouseMenu();
    void addItem(string name, string description, bool vegetarian, double price);
-   vector<MenuItem> getMenuItems();
+   //vector<MenuItem> getMenuItems();
    Iterator *createIterator();
    string toString();
 };

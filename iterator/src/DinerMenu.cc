@@ -20,10 +20,6 @@ void DinerMenu::addItem(string name, string description, bool vegetarian, double
     menuItems.push_back(*m_item);
 }
 
-vector<MenuItem> DinerMenu::getMenuItems() {
-    return menuItems;
-}
-
 Iterator *DinerMenu::createIterator() {
     return new DinerMenuIterator(menuItems);
 }

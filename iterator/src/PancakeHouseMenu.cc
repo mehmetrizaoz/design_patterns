@@ -17,10 +17,6 @@ void PancakeHouseMenu::addItem(string name, string description, bool vegetarian,
     menuItems.push_back(*m_item);
 }
 
-vector<MenuItem> PancakeHouseMenu::getMenuItems() {
-    return menuItems;
-}
-
 Iterator *PancakeHouseMenu::createIterator() {
     return new PancakeHouseMenuIterator(menuItems);
 }

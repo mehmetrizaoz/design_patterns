@@ -11,13 +11,9 @@ using namespace std;
 
 class DinerMenu : public Menu {
 public:    
-   //static final int MAX_ITEMS = 6;
-   int numberOfItems = 0;
    vector<MenuItem> menuItems;
-
    DinerMenu();
    void addItem(string name, string description, bool vegetarian, double price);
-   vector<MenuItem> getMenuItems();
    Iterator *createIterator();
 };
 
