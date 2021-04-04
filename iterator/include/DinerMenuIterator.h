@@ -3,14 +3,14 @@
 
 #include "Iterator.h"
 #include "MenuItem.h"
-#include <vector>
+#include <deque>
 
 class DinerMenuIterator : public Iterator {
 public:
-	vector<MenuItem> items;
+	deque<MenuItem> items;
 	int position = 0;
  
-	DinerMenuIterator(vector<MenuItem> items);
+	DinerMenuIterator(deque<MenuItem> items);
 	void *next();
 	bool hasNext();
 };

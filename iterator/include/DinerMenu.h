@@ -4,14 +4,14 @@
 #include "Iterator.h"
 #include "Menu.h"
 #include "MenuItem.h"
-#include <vector>
+#include <deque>
 #include <string>
 
 using namespace std;
 
 class DinerMenu : public Menu {
 public:    
-   vector<MenuItem> menuItems;
+   deque<MenuItem> menuItems;
    DinerMenu();
    void addItem(string name, string description, bool vegetarian, double price);
    Iterator *createIterator();

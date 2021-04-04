@@ -1,6 +1,6 @@
 #include "DinerMenuIterator.h"
 
-DinerMenuIterator::DinerMenuIterator(vector<MenuItem> items) {
+DinerMenuIterator::DinerMenuIterator(deque<MenuItem> items) {
    this->items = items;
 }
 
