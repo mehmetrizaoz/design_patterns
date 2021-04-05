@@ -9,7 +9,6 @@ Employee::Employee(string name, string dept, int sal) {
     this->name = name;
     this->dept = dept;
     this->salary = sal;
-    //subordinates = new ArrayList<Employee>();
 }
 
 void Employee::add(Employee e) {

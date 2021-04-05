@@ -29,14 +29,11 @@ int main(){
 
    for (Employee headEmployee : CEO->getSubordinates()) {
       headEmployee.toString();
-       cout << "112" << endl;
-
-      for (Employee employee : headEmployee.getSubordinates()) {
-         cout << "11" << endl;
+      for (Employee employee : headSales->getSubordinates()) {
          employee.toString();
-      }
-      
+      }  
    }		
+ 
 
    return 0;
 }
