@@ -16,7 +16,7 @@ private:
 public:
    Employee(string name,string dept, int sal);
    void add(Employee e);
-   void remove(Employee e);
+   void remove();
    list<Employee> getSubordinates();
    void toString();
 };

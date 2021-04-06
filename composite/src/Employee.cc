@@ -15,7 +15,7 @@ void Employee::add(Employee e) {
     subordinates.push_back(e);
 }
 
-void Employee::remove(Employee e) {
+void Employee::remove() {
     subordinates.pop_back();
 }
 
