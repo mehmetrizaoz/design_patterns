@@ -9,6 +9,6 @@ class Expression{
 public:
    Expression();
    virtual bool interpreter(string con)=0;
-}
+};
 
 #endif
