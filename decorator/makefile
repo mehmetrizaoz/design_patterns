@@ -4,7 +4,7 @@ CC := g++
 
 CPPFLAGS = -I include
 objects := Beverage.o Decaf.o Espresso.o HouseBlend.o CondimentDecorator.o \
-    main.o
+    Whip.o Soy.o Mocha.o DarkRoast.o Milk.o main.o
 
 all: exec
 
