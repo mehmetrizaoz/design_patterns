@@ -3,7 +3,7 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include
-objects := main.o
+objects := Student.o StudentView.o StudentController.o main.o
 
 all: exec
 
