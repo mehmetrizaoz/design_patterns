@@ -14,12 +14,12 @@ int shoppingCartVisitorImpl::visit(book &b){
        cost = b.getPrice();
    }
 
-   cout << "book isbn::" << b.getIsbnNumber() << " cost = " << cost;
+   cout << "book isbn::" << b.getIsbnNumber() << " cost = " << cost << endl;
    return cost;
 }
 
 int shoppingCartVisitorImpl::visit(fruit &f){
    int cost = f.getPricePerKg() * f.getWeight();
-   cout << f.getName() << " cost = " << cost;
+   cout << f.getName() << " cost = " << cost << endl;
    return cost;
 }
