@@ -1,5 +1,5 @@
-#ifndef MP4_PLAYER_H
-#define MP4_PLAYER_H
+#pragma once
+
 
 #include "AdvancedMediaPlayer.h"
 
@@ -10,4 +10,4 @@ public:
 };
 
 
-#endif
+

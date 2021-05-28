@@ -1,5 +1,5 @@
-#ifndef AUDIO_ADAPTER_H
-#define AUDIO_ADAPTER_H
+#pragma once
+
 
 #include "AdvancedMediaPlayer.h"
 #include "MediaAdapter.h"
@@ -12,4 +12,4 @@ public:
    void play(string audioType, string fileName);
 };
 
-#endif
+

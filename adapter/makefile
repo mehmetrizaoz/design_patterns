@@ -3,7 +3,7 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include
-objects = AdvancedMediaPlayer.o VlcPlayer.o Mp4Player.o MediaPlayer.o MediaAdapter.o AudioPlayer.o main.o
+objects = VlcPlayer.o Mp4Player.o MediaAdapter.o AudioPlayer.o main.o
 
 all: exec
 

@@ -1,5 +1,5 @@
-#ifndef VLC_PLAYER_H
-#define VLC_PLAYER_H
+#pragma once
+
 
 #include "AdvancedMediaPlayer.h"
 
@@ -10,4 +10,4 @@ public:
 };
 
 
-#endif
+
