@@ -14,6 +14,6 @@ string book::getIsbnNumber(){
     return isbnNumber;
 }
 
-int book::accept(shoppingCartVisitor &visitor){
-    return visitor.visit(*this);
+int book::accept(/*shoppingCartVisitor &visitor*/){
+    return 1;//visitor.visit(*this);
 }

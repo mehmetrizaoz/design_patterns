@@ -1,4 +1,4 @@
-/*#include "fruit.h"
+#include "fruit.h"
 #include "shoppingCartVisitor.h"
 
 fruit::fruit(int priceKg, int wt, string nm){
@@ -19,7 +19,6 @@ string fruit::getName(){
    return name;
 }
 
-int fruit::accept(shoppingCartVisitor &visitor){
-   return visitor.visit(*this);;
+int fruit::accept(/*shoppingCartVisitor &visitor*/){
+   return 1;//visitor.visit(*this);;
 }
-*/

@@ -14,7 +14,7 @@ public:
     int getPricePerKg();
     int getWeight();
     string getName();
-    int accept(shoppingCartVisitor &visitor);
+    int accept(/*shoppingCartVisitor &visitor*/);
 private:
     int pricePerKg;
     int weight;

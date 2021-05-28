@@ -1,6 +1,6 @@
 #include "shoppingCartVisitorImpl.h"
 #include "book.h"
-//#include "fruit.h"
+#include "fruit.h"
 #include <iostream>
 
 using namespace std;
@@ -17,10 +17,9 @@ int shoppingCartVisitorImpl::visit(book &b){
    cout << "book isbn::" << b.getIsbnNumber() << " cost = " << cost;
    return cost;
 }
-/*
+
 int shoppingCartVisitorImpl::visit(fruit &f){
    int cost = f.getPricePerKg() * f.getWeight();
    cout << f.getName() << " cost = " << cost;
    return cost;
 }
-*/
