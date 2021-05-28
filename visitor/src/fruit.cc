@@ -19,6 +19,6 @@ string fruit::getName(){
    return name;
 }
 
-int fruit::accept(/*shoppingCartVisitor &visitor*/){
-   return 1;//visitor.visit(*this);;
+int fruit::accept(shoppingCartVisitor &visitor){
+   return visitor.visit(*this);;
 }
