@@ -5,6 +5,7 @@
 #include "itemElement.h"
 #include "book.h"
 #include "fruit.h"
+#include "shoppingCartVisitor.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ int main() {
     ie.push_back(&b2);
     ie.push_back(&f1);
 
+    shoppingCartVisitor visitor = shoppingCartVisitor();
     
 
 
