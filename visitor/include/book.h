@@ -8,7 +8,7 @@ using namespace std;
 
 class shoppingCartVisitor;
 
-class book : itemElement{
+class book : public itemElement{
 public:
    book(int cost, string isbn);
    int getPrice();
