@@ -1,5 +1,4 @@
-#ifndef BEVERAGE_H
-#define BEVERAGE_H
+#pragma once
 
 #include <string>
 
@@ -11,5 +10,3 @@ public:
    string getDescription(); 
    virtual double cost()=0;
 };
-
-#endif

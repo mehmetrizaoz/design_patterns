@@ -27,7 +27,6 @@ int main() {
         sum += (*it)->accept(*visitor);
     }
 
-
     cout << "sum: " << sum << endl;
 
     return EXIT_SUCCESS;

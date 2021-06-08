@@ -1,5 +1,4 @@
-#ifndef DIRECTOR_H
-#define DIRECTOR_H
+#pragma once
 
 #include "AbstractEmployee.h"
 
@@ -9,4 +8,3 @@ public:
    void write(int amount);
 };
 
-#endif

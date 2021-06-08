@@ -1,5 +1,4 @@
-#ifndef DECAF_H
-#define DECAF_H
+#pragma once
 
 #include <string>
 #include "Beverage.h"
@@ -11,5 +10,3 @@ public:
    Decaf();
    double cost() override;
 };
-
-#endif

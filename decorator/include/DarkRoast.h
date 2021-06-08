@@ -1,5 +1,4 @@
-#ifndef DARK_ROAST_H
-#define DARK_ROAST_H
+#pragma once
 
 #include <string>
 #include "Beverage.h"
@@ -11,5 +10,3 @@ public:
    DarkRoast();
    double cost() override;
 };
-
-#endif

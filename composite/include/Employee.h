@@ -1,5 +1,4 @@
-#ifndef EMPLOYEE_H
-#define EMPLOYEE_H
+#pragma once
 
 #include <string>
 #include <list>
@@ -20,5 +19,3 @@ public:
    list<Employee> getSubordinates();
    void toString();
 };
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef WHIP_H
-#define WHIP_H
+#pragma once
 
 #include "CondimentDecorator.h"
 #include <string>
@@ -14,5 +13,3 @@ public:
    string getDescription();
    double cost();
 };
-
-#endif

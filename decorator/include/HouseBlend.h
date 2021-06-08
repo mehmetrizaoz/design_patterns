@@ -1,5 +1,4 @@
-#ifndef HOUSE_BLEND_H
-#define HOUSE_BLEND_H
+#pragma once
 
 #include <string>
 #include "Beverage.h"
@@ -11,6 +10,3 @@ public:
 	HouseBlend();
 	double cost();
 };
-
-
-#endif

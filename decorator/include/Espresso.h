@@ -1,5 +1,4 @@
-#ifndef EXPRESSO_H
-#define EXPRESSO_H
+#pragma once
 
 #include <string>
 #include "Beverage.h"
@@ -11,6 +10,3 @@ public:
 	Espresso();
 	double cost();
 };
-
-
-#endif

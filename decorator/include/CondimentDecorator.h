@@ -1,5 +1,4 @@
-#ifndef CONDIMENT_DECORATOR_H
-#define CONDIMENT_DECORATOR_H
+#pragma once
 
 #include "Beverage.h"
 #include <string>
@@ -11,6 +10,3 @@ public:
 	virtual string getDescription()=0;
     CondimentDecorator();
 };
-
-
-#endif

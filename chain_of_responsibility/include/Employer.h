@@ -1,5 +1,4 @@
-#ifndef EMPLOYER_H
-#define EMPLOYER_H
+#pragma once
 
 #include "AbstractEmployee.h"
 
@@ -8,5 +7,3 @@ public:
    Employer(int level);
    void write(int amount);
 };
-
-#endif
