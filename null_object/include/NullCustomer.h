@@ -1,5 +1,4 @@
-#ifndef NULL_CUSTOMER_H
-#define NULL_CUSTOMER_H
+#pragma once
 
 #include <string>
 #include "AbstractCustomer.h"
@@ -12,4 +11,4 @@ public:
    bool isNil();   
 };
 
-#endif
+

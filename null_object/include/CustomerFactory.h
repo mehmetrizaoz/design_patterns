@@ -1,5 +1,4 @@
-#ifndef CUSTOMER_FACTORY_H
-#define CUSTOMER_FACTORY_H
+#pragma once
 
 #include "AbstractCustomer.h"
 #include <string>
@@ -13,4 +12,3 @@ public:
    static AbstractCustomer *getCustomer(string name);
 };
 
-#endif

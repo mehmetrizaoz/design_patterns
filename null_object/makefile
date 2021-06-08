@@ -3,7 +3,7 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include
-objects := AbstractCustomer.o RealCustomer.o NullCustomer.o CustomerFactory.o main.o
+objects := RealCustomer.o NullCustomer.o CustomerFactory.o main.o
 
 all: exec
 
