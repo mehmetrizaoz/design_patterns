@@ -1,5 +1,4 @@
-#ifndef STATISTICS_DISPLAY_H
-#define STATISTICS_DISPLAY_H
+#pragma once
 
 #include "Observer.h"
 #include "DisplayElement.h"
@@ -18,4 +17,3 @@ public:
    void display();
 };
 
-#endif

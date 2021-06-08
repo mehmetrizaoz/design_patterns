@@ -1,5 +1,4 @@
-#ifndef HEAT_INDEX_DISPLAY_H
-#define HEAT_INDEX_DISPLAY_H
+#pragma once
 
 #include "WeatherData.h"
 #include "Observer.h"
@@ -16,5 +15,3 @@ private:
    float computeHeatIndex(float t, float rh);
 };
 
-
-#endif

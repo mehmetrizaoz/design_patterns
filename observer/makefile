@@ -3,8 +3,8 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include -std=c++14
-objects = Observer.o  CurrentConditionsDisplay.o StatisticsDisplay.o main.o \
-   Subject.o ForecastDisplay.o HeatIndexDisplay.o DisplayElement.o WeatherData.o 
+objects = CurrentConditionsDisplay.o StatisticsDisplay.o main.o \
+   ForecastDisplay.o HeatIndexDisplay.o WeatherData.o 
 
 all: exec
 

@@ -1,12 +1,7 @@
-#ifndef DISPLAY_ELEMENT_H
-#define DISPLAY_ELEMENT_H
+#pragma once
 
 class DisplayElement {
-public:/*
-   void display();
-private:*/
-   DisplayElement();
+public:
    virtual void display()=0;
 };
 
-#endif

@@ -1,5 +1,4 @@
-#ifndef CURRENT_CONDITION_DISPLAY_H
-#define CURRENT_CONDITION_DISPLAY_H
+#pragma once
 
 #include "Observer.h"
 #include "DisplayElement.h"
@@ -17,4 +16,3 @@ private:
    Subject *weatherData;
 };
 
-#endif

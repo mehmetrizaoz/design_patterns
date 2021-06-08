@@ -1,5 +1,4 @@
-#ifndef WEATHER_DATA_H
-#define WEATHER_DATA_H
+#pragma once
 
 #include "Subject.h"
 #include "Observer.h"
@@ -25,5 +24,3 @@ public:
 	float getHumidity();
 	float getPressure();
 };
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef FORECAST_DISPLAY_H
-#define FORECAST_DISPLAY_H
+#pragma once
 
 #include "WeatherData.h"
 #include "Observer.h"
@@ -16,4 +15,4 @@ public:
    void display();
 };
 
-#endif
+
