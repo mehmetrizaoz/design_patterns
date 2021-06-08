@@ -3,7 +3,8 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include -std=c++14
-objects = main.o 
+objects = main.o fan.o light.o startFanCommand.o stopFanCommand.o \
+	turnOnLightCommand.o turnOffLightCommand.o homeAutomationRemote.o
 
 all: exec
 
