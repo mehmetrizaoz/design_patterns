@@ -3,7 +3,7 @@
 
 class Iterator {
 public:
-   Iterator();
+   //Iterator();
    virtual bool hasNext()=0;
    virtual void *next()=0;
 };

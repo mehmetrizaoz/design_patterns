@@ -3,7 +3,7 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include -std=c++14
-objects = Iterator.o MenuItem.o DinerMenuIterator.o Menu.o main.o \
+objects = MenuItem.o DinerMenuIterator.o main.o \
     DinerMenu.o Waitress.o PancakeHouseMenu.o PancakeHouseMenuIterator.o
 
 all: exec

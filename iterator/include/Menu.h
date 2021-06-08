@@ -5,7 +5,7 @@
 
 class Menu {
 public:
-   Menu();   
+   //Menu();   
    virtual Iterator *createIterator()=0;
 };
 
