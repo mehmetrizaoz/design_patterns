@@ -1,9 +1,6 @@
-#ifndef PLAYER_MANAGER_H
-#define PLAYER_MANAGER_H
+#pragma once
 
 #include "Player.h"
-
-
 
 class playerManager {
 public:
@@ -12,6 +9,3 @@ public:
 private:
    static Player* playerType[N];
 };
-
-
-#endif

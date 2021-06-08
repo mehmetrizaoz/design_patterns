@@ -1,5 +1,4 @@
-#ifndef SOLD_OUT_STATE_H
-#define SOLD_OUT_STATE_H
+#pragma once
 
 #include "SoldOutState.h"
 #include "GumballMachine.h"
@@ -18,5 +17,5 @@ public:
    void performPrint();
 };
 
-#endif
+
 

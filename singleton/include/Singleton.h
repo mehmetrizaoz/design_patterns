@@ -1,5 +1,4 @@
-#ifndef SINGLETON_H
-#define SINGLETON_H
+#pragma once
 
 #include <iostream>
 
@@ -26,4 +25,3 @@ public:
    void setData(int data);
 };
 
-#endif

@@ -1,5 +1,4 @@
-#ifndef DEFENDER_H
-#define DEFENDER_H
+#pragma once
 
 #include "PlayerStrategy.h"
 
@@ -8,4 +7,3 @@ public:
    void performShoot();
 };
 
-#endif

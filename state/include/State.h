@@ -1,5 +1,4 @@
-#ifndef STATE_H
-#define STATE_H
+#pragma once
 
 class State{ 
 public:
@@ -16,5 +15,5 @@ private:
    virtual void performPrint()=0;
 };
    
-#endif
+
 

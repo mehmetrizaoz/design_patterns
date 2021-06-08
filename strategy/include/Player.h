@@ -1,5 +1,4 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 
 #include "PlayerStrategy.h"
 
@@ -14,5 +13,4 @@ public:
    ~Player();
 };
 
-#endif
 

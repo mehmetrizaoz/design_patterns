@@ -1,5 +1,4 @@
-#ifndef HAS_QUARTER_STATE_H
-#define HAS_QUARTER_STATE_H
+#pragma once
 
 #include "HasQuarterState.h"
 #include "GumballMachine.h"
@@ -18,5 +17,5 @@ public:
   void performPrint();
 };
 
-#endif
+
 

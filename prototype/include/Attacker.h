@@ -1,5 +1,4 @@
-#ifndef ATTACKER_H
-#define ATTACKER_H
+#pragma once
 
 #include "Player.h"
 
@@ -9,4 +8,3 @@ public:
    void attributes() const;   
 };
 
-#endif

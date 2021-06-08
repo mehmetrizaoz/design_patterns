@@ -1,5 +1,4 @@
-#ifndef GUMBALL_MACHINE_H
-#define GUMBALL_MACHINE_H
+#pragma once
 
 #include "State.h"
 #include <string>
@@ -33,7 +32,6 @@ public:
    State *getSoldOutState();
    State *getSoldState();
 }; 
-#endif      
    
 
 

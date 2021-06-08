@@ -1,5 +1,4 @@
-#ifndef GOALKEEPER_H
-#define GOALKEEPER_H
+#pragma once
 
 #include "Player.h"
 
@@ -9,4 +8,3 @@ public:
    void attributes() const;   
 };
 
-#endif

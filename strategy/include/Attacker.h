@@ -1,5 +1,4 @@
-#ifndef ATTACKER_H
-#define ATTACKER_H
+#pragma once
 
 #include "PlayerStrategy.h"
 
@@ -8,4 +7,3 @@ public:
    void performShoot();
 };
 
-#endif

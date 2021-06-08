@@ -1,5 +1,4 @@
-#ifndef FOOTBALLPLAYER_H
-#define FOOTBALLPLAYER_H
+#pragma once
 
 #include "Player.h"
 
@@ -9,4 +8,3 @@ public:
    void describe();
 };
 
-#endif

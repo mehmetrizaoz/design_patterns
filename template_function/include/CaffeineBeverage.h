@@ -1,5 +1,4 @@
-#ifndef CAFFEINE_BEVERAGE_H
-#define CAFFEINE_BEVERAGE_H
+#pragma once
 
 class CaffeineBeverage {  
 public:
@@ -14,4 +13,3 @@ private:
 
 };
 
-#endif

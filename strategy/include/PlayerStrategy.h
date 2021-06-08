@@ -1,5 +1,4 @@
-#ifndef PATTESTRATEGY_H
-#define PATTESTRATEGY_H
+#pragma once
 
 class PlayerStrategy{ 
 public:
@@ -7,6 +6,3 @@ public:
 private:
    virtual void performShoot() = 0;
 };
-   
-
-#endif

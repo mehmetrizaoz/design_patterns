@@ -1,5 +1,4 @@
-#ifndef SOLD_STATE_H
-#define SOLD_STATE_H
+#pragma once
 
 #include "SoldState.h"
 #include "GumballMachine.h"
@@ -18,5 +17,5 @@ public:
    void performPrint();   
 };
 
-#endif
+
 

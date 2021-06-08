@@ -1,5 +1,4 @@
-#ifndef TEA_H
-#define TEA_H
+#pragma once
 
 #include "CaffeineBeverage.h"
 
@@ -9,4 +8,3 @@ public:
    void performAddCondiments();
 };
 
-#endif
