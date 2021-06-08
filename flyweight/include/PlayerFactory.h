@@ -1,5 +1,4 @@
-#ifndef PLAYER_FACTORY_H
-#define PLAYER_FACTORY_H
+#pragma once
 
 #include <string>
 #include <vector>
@@ -11,5 +10,3 @@ public:
     static Player *getPlayer(string type);
     static vector<Player*> hm;
 };
-
-#endif

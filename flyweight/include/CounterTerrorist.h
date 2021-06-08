@@ -1,5 +1,4 @@
-#ifndef COUNTER_TERRORIST_H
-#define COUNTER_TERRORIST_H
+#pragma once
 
 #include <string>
 #include "Player.h"
@@ -13,5 +12,3 @@ public:
    void assignWeapon(string weapon);
    void mission();
 };
-
-#endif

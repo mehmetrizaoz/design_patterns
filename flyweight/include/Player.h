@@ -1,5 +1,4 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 
 #include <string>
 
@@ -9,12 +8,6 @@ class Player{
 public:
    string type;
    Player();
-//   void assignWeapon(string weapon);
-//   void mission();
-   
-//private:
    virtual void assignWeapon(string weapon)=0;
    virtual void mission()=0;   
 };
-
-#endif
