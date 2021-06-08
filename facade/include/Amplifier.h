@@ -1,5 +1,4 @@
-#ifndef AMPLIFIER_H
-#define AMPLIFIER_H
+#pragma once
 
 #include <string>
 #include "DvdPlayer.h"
@@ -30,4 +29,3 @@ public:
    string toString();
 };
 
-#endif

@@ -1,5 +1,4 @@
-#ifndef SHAPE_FACTORY_H
-#define SHAPE_FACTORY_H
+#pragma once
 
 #include "Shape.h"
 #include <string>
@@ -11,4 +10,3 @@ public:
     Shape *getShape(string shapeType);
 };
 
-#endif

@@ -1,5 +1,4 @@
-#ifndef TUNER_H
-#define TUNER_H
+#pragma once
 
 #include <string>
 #include "Amplifier.h"
@@ -21,6 +20,3 @@ public:
     void setFm();
     string toString();
 };
-
-
-#endif

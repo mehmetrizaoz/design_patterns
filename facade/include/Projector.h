@@ -1,5 +1,4 @@
-#ifndef PROJECTOR_H
-#define PROJECTOR_H
+#pragma once
 
 #include "DvdPlayer.h"
 #include <string>
@@ -19,5 +18,3 @@ public:
    void tvMode();
    string toString();
 };
-
-#endif

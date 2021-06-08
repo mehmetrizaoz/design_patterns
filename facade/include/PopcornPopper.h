@@ -1,5 +1,4 @@
-#ifndef POPCORN_H
-#define POPCORN_H
+#pragma once
 
 #include <string>
 
@@ -14,5 +13,3 @@ public:
    void pop();
    string toString();
 };
-
-#endif

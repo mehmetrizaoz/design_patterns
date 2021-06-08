@@ -1,5 +1,4 @@
-#ifndef LIGHTS_H
-#define LIGHTS_H
+#pragma once
 
 #include <string>
 
@@ -14,5 +13,3 @@ public:
 	void dim(int level);   
     string toString();
 };
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef CD_PLAYER_H
-#define CD_PLAYER_H
+#pragma once
 
 #include <string>
 #include "Amplifier.h"
@@ -24,5 +23,3 @@ public:
    void pause();
    string toString();
 };
-
-#endif

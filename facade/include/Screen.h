@@ -1,5 +1,4 @@
-#ifndef SCREEN_H
-#define SCREEN_H
+#pragma once
 
 #include <string>
 
@@ -13,5 +12,3 @@ public:
 	void down();
     string toString();
 };
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef FACADE_H
-#define FACADE_H
+#pragma once
 
 #include <string>
 #include "Amplifier.h"
@@ -35,5 +34,3 @@ public:
 	void endRadio();
 };
 
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef DVD_H
-#define DVD_H
+#pragma once
 
 #include <string>
 #include "Amplifier.h"
@@ -26,5 +25,3 @@ public:
 	void setSurroundAudio();	
  	string toString();	
 };
-
-#endif
