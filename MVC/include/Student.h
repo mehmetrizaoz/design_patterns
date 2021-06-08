@@ -1,5 +1,4 @@
-#ifndef STUDENT_H
-#define STUDENT_H
+#pragma once
 
 #include <string>
 
@@ -16,4 +15,3 @@ public:
    void setName(string name);
 };
 
-#endif

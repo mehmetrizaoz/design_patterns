@@ -1,5 +1,4 @@
-#ifndef STUDENT_CONTROLLER_H
-#define STUDENT_CONTROLLER_H
+#pragma once
 
 #include <string>
 #include "Student.h"
@@ -18,4 +17,3 @@ public:
    void updateView();
 };
 
-#endif

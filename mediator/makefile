@@ -3,7 +3,7 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include -std=c++14
-objects = main.o ChatRoom.o Person.o GoogleChat.o
+objects = main.o Person.o GoogleChat.o
 
 all: exec
 

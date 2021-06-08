@@ -1,5 +1,4 @@
-#ifndef STUDENT_VIEW_H
-#define STUDENT_VIEW_H
+#pragma once
 
 #include <string>
 
@@ -10,4 +9,3 @@ public:
    void printStudentDetails(string studentName, string studentRollNo);
 };
 
-#endif

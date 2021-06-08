@@ -1,5 +1,4 @@
-#ifndef PERSON_H
-#define PERSON_H
+#pragma once
 
 #include <iostream>
 #include <vector>
@@ -19,4 +18,3 @@ public:
     void receive(string from, string msg);
 };
 
-#endif

@@ -1,5 +1,4 @@
-#ifndef GOOGLE_CHAT_H
-#define GOOGLE_CHAT_H
+#pragma once
 
 #include <string>
 #include <iostream>
@@ -19,5 +18,3 @@ public:
     void message(string from, string to, string msg);
 };
 
-
-#endif
