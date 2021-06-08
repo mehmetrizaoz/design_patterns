@@ -1,5 +1,4 @@
-#ifndef AND_EXPRESSION_H
-#define AND_EXPRESSION_H
+#pragma once
 
 #include "Expression.h"
 #include <string>
@@ -12,4 +11,3 @@ public:
     bool interpreter(string con);
 };
 
-#endif

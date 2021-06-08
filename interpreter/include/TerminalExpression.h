@@ -1,5 +1,4 @@
-#ifndef TERMINAL_EXPRESSION_H
-#define TERMINAL_EXPRESSION_H
+#pragma once
 
 #include <string>
 #include "Expression.h"
@@ -11,4 +10,4 @@ public:
    bool interpreter(string con);
 };
 
-#endif
+
