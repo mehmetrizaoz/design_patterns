@@ -5,12 +5,12 @@
 
 using namespace std;
 
-user::user(userBuilder *builder) {
-    this->firstName = builder->firstName;
-    this->lastName = builder->lastName;
-    this->age = builder->age;
-    this->phone = builder->phone;
-    this->address = builder->address;
+user::user(userBuilder builder) {
+    this->firstName = builder.firstName;
+    this->lastName = builder.lastName;
+    this->age = builder.age;
+    this->phone = builder.phone;
+    this->address = builder.address;
 }
 
 string user::getFirstName() {

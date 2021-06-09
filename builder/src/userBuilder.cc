@@ -23,9 +23,9 @@ userBuilder& userBuilder::setAddress(string address) {
 }
 
 user userBuilder::build() {
-    user *usr =  new user(this);
-    validateUserObject(*usr);
-    return *usr;
+    user usr =  user(*this);
+    validateUserObject(usr);
+    return usr;
 }
 
 void userBuilder::validateUserObject(user u) {

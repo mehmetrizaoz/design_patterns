@@ -14,7 +14,7 @@ public:
     int age;
     string phone;
     string address;    
-    user (userBuilder *builder);
+    user (userBuilder builder);
     string getFirstName();
     string getLastName();
     int getAge();
