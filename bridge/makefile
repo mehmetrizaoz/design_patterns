@@ -3,7 +3,8 @@ vpath %.h include
 CC := g++
 
 CPPFLAGS = -I include -std=c++14
-objects = main.o 
+objects = main.o FileDownloaderAbstractionImpl.o LinuxFileDownloadImplementor.o \
+			WindowsFileDownloadImplementor.o
 
 all: exec
 
